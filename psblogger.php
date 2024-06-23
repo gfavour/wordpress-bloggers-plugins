@@ -18,10 +18,9 @@ function psblogger_fxn(){
 //add_menu_page('psblogger','PS Blogger','manage_options','psblogger','psblogger_init_fxn','',7); //documentation functions
 //add_submenu_page('psblogger','Customer Requests', 'request', 'manage_options','psb_request','psblogger_menu1_fxn');
 //add_submenu_page('psblogger','Testimonials', 'Testimonials', 'manage_options','psb_testimony','psblogger_menu2_fxn');
-//add_submenu_page('psblogger','Documentation', 'Payments', 'manage_options','pscon_payments','PSCONTESTER_menu8_fxn');
 }
 
-function PSCONTESTER_init_fxn(){
+function psblogger_init_fxn(){
 	include("requests.php");
 }
 
