@@ -1,0 +1,42 @@
+<style>
+#whatstaffs{background:#f8f8f8;border:#00cc00 solid 2px;border-radius:10px;padding:10px;width:300px;position:absolute;bottom:60px;right:15px;}
+#whatstaffs: after{
+  border-right: solid 15px transparent;
+  border-left: solid 15px transparent;
+  border-top: solid 15px #00CC00;
+  transform: translateX(250%);
+  position: absolute;
+  z-index:-1;
+  content:'';
+  top: 100%;
+  left: 50%;
+  height: 0;
+  width: 0;
+}
+.whatstaffsbtn{border-radius:20px;padding:10px 15px;position:fixed; z-index:1000; background:#00CC00;color:#fff; font-size:14px; bottom:15px; right:15px;-webkit-box-shadow: 0 2px 2px 2px #cccccc; box-shadow: 0 2px 2px 2px #cccccc;display:inline-block;text-decoration:none;}
+.whatsimg{float:left;margin:0 10px 5px 0;width:50px;height:auto;border-radius:50%; border:#ccc solid 1px; vertical-align: text-bottom;}
+.whatsflybtn{display:block;text-decoration:none;color:#333;clear:both;margin-bottom:5px;font:14px/16px Arial; border-bottom:#ddd dotted 1px; clear:both;}
+.arrow-down{
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 10px solid #0c0; position: absolute; bottom:-10px; right:13px;
+}
+.whatsapplbl{ padding-top:10px; font-weight:bold;}
+.whatsicon{ width:20px; height:auto; position:absolute; z-index:100;}
+.whatsicon1{ top:45px; left:45px;}
+.whatsicon2{ top:105px; left:45px;}
+.whatsicon3{ top:170px; left:45px;}
+</style>
+
+<div id="whatstaffs" style="display:none;">
+<a href="https://web.whatsapp.com/send?phone=23470000000" target="_Blank" class="whatsflybtn"><img src="user1.jpg" class="whatsimg"><img src="icon.png" class="whatsicon whatsicon1"><div class="whatsapplbl">Grace<br>Administrator (+23470000000)</div><br clear="all" /></a>
+
+<a href="https://web.whatsapp.com/send?phone=23470000000" target="_Blank" class="whatsflybtn"><img src="user2.jpg" class="whatsimg"><img src="icon.png" class="whatsicon whatsicon2"><div class="whatsapplbl">James<br>IT Manager (+23470000000)</div><br clear="all" /></a>
+
+<a href="https://web.whatsapp.com/send?phone=23470000000" target="_Blank" class="whatsflybtn"><img src="user3.jpg" class="whatsimg"><img src="icon.png" class="whatsicon whatsicon3"><div class="whatsapplbl">Seun<br>Sales Rep. (+23470000000)</div><br clear="all" /></a>
+<i class="arrow-down"></i>
+</div>
+
+<a class="whatstaffsbtn" href="javascript:void();" onclick="if(document.getElementById('whatstaffs').style.display === 'none'){ document.getElementById('whatstaffs').style.display = 'block'; }else{ document.getElementById('whatstaffs').style.display = 'none'; } "><i class="fa fa-whatsapp" style="font-size:18px;"></i> Chat With Us On WhatsApp</a>
